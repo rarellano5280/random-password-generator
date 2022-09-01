@@ -20,7 +20,7 @@ function generatePassword (){
     console.log("Button has been clicked.");
 
 //prompt the user to choose a number length 
-var userEntry = window.prompt("What would you like your password length to be? Your password must be at least 8 charaters long, but no more than 128 characters long."); 
+var userEntry = window.prompt("What would you like your password length to be? Your password must be at least 8 characters long, but no more than 128 characters long."); 
 
 //Checking to see if entry is a number. 
 var pswdLength = parseInt(userEntry);
