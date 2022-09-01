@@ -31,7 +31,7 @@ if(isNaN(pswdLength)){
 }
 //checking to see if the length is within a specific criteria.
 if (pswdLength < 8 || pswdLength > 128 ){
-window.alert("Your password must be at least 8 charaters long, but no more than 128 characters long.");
+window.alert("Your password must be at least 8 characters long, but no more than 128 characters long.");
 return;
 }
 
@@ -39,7 +39,7 @@ return;
 var pswdNumbers = window.confirm("Do you want to include numbers in your password?");
 var pswdSpecialCharacters = window.confirm("Do you want to include special characters in your password?");
 var pswdUppercase = window.confirm("Do you want to include uppercase letters in your password?");
-var pswdLowercase = window.confirm("Do you want to include lowercaase letters in your password?");
+var pswdLowercase = window.confirm("Do you want to include lowercase letters in your password?");
 
 console.log(pswdNumbers);
 console.log(pswdSpecialCharacters);
