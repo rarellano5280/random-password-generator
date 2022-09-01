@@ -1,6 +1,20 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
+//create funtion to generate random number
+function randomNum(min, max) {
+    if (!max) {
+        max = min
+        min = 0
+    }
+    var rand = Math.random()
+    return Math.floor(min*(1 - rand) + rand * max)
+}
+
+function getRandomItem(list) {
+    return list[randomNum(list.length)]
+}
+
 //created function to generate password 
 function generatePassword (){
     console.log("Button has been clicked.");
@@ -63,7 +77,14 @@ if (pswdNumbers){
      }
 console.log(userChoices);
 
-var 
+var generateRandomPswd = ""
+
+for (var i = 0; i < pswdLength; i++) {
+    var randomList = getRandomItem(userChoices)
+    var randomChar = getRandomItem(randomList);
+    console.log(randomChar)
+    }
+    
 }
 
 // Write password to the #password input
