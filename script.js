@@ -34,15 +34,36 @@ console.log(pswdLowercase);
 
 //array lists for criteria
 var numList = ["0" ,"1", "2", "3", "4", "5", "6", "7", "8", "9"]
-var specalCharList = ["!", "@", "#", "$", ,"^", "&", "*"]
+var specalCharList = ["!", "@", "#", "$", "&", "*"]
 var lowercaseList = ["a", "b", "c", "d", "e", "f", "g", "h", "i","j", "k", "l", "m", "n", "o", "p", "q","r","s", "t", "u", "v", "w", "x", "y", "z"]
 var uppercaseList = []
+
+var userChoices = []
 
 //iteration for uppercass list. This will chnage the lowercase letters to uppercase
 for(var i = 0; i < lowercaseList.length; i++){
     uppercaseList[i] = lowercaseList[i].toUpperCase()
 }
 
+//If statements to push user choices to the userchoice variable
+if (pswdNumbers){
+    userChoices.push(numList)
+    }
+    
+    if (pswdSpecialCharacters){
+        userChoices.push(specalCharList)
+    }
+    
+    if (pswdLowercase){
+        userChoices.push(lowercaseList)
+    }
+    
+    if (pswdUppercase){
+        userChoices.push(uppercaseList)
+     }
+console.log(userChoices);
+
+var 
 }
 
 // Write password to the #password input
