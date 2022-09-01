@@ -75,6 +75,11 @@ if (pswdNumbers){
     if (pswdUppercase){
         userChoices.push(uppercaseList)
      }
+
+     if (userChoices.length === 0){
+        userChoices.push(numList)
+     }
+
 console.log(userChoices);
 
 var generateRandomPswd = ""
@@ -82,9 +87,11 @@ var generateRandomPswd = ""
 for (var i = 0; i < pswdLength; i++) {
     var randomList = getRandomItem(userChoices)
     var randomChar = getRandomItem(randomList);
-    console.log(randomChar)
+    generateRandomPswd += randomChar
     }
-    
+    console.log(generateRandomPswd)
+
+    return generateRandomPswd
 }
 
 // Write password to the #password input
