@@ -24,7 +24,7 @@ After all citeria has been chosen the random password will display in the passwo
 ![](03-javascript-homework-demo.png)
 
 ## Git Pages Link 
-
+https://rarellano5280.github.io/random-password-generator/
 
 ## License
 MIT License
